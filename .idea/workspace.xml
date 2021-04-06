@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5c9df31-83b3-49f8-9c86-c7567df1e946" name="Default Changelist" comment="" />
+    <list default="true" id="d5c9df31-83b3-49f8-9c86-c7567df1e946" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/my-first-spring-boot-app-4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-first-spring-boot-app-4/my-first-spring-boot-app-4/my-first-spring-boot-project-0.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-first-spring-boot-app-4/my-first-spring-boot-app-4/src/main/java/org/cnu/realcoding/controller/DogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-first-spring-boot-app-4/my-first-spring-boot-app-4/src/main/java/org/cnu/realcoding/controller/DogController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,9 +36,30 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyFirstSpringBootApp4Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="my-first-spring-boot-project-0" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.cnu.realcoding.MyFirstSpringBootApp4Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -43,10 +72,22 @@
       <workItem from="1617716267175" duration="100000" />
       <workItem from="1617716770851" duration="156000" />
       <workItem from="1617716966816" duration="150000" />
+      <workItem from="1617734485021" duration="119000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
