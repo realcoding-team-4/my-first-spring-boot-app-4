@@ -41,14 +41,16 @@ public class DogController {
         return dogManagementService.getDogByOwnerPhoneNumber(ownerPhoneNumber);
     }
 
-    @GetMapping("/dogs/{kind}")
-    public Dog getDogByKind(@PathVariable String kind){
-        return dogManagementService.getDogByKind(kind);
-    }
-
-
     @GetMapping("/dogs/{name}/{ownerName}/{ownerPhoneNumber}")
     public Dog getDogByAll(@PathVariable String name,@PathVariable  String ownerName,@PathVariable  String ownerPhoneNumber){
         return dogManagementService.getDogByAll(name,ownerName,ownerPhoneNumber);
     }
+    /*여기서 부터 kind 및 ppt 84부터 진행하면됨.
+    @GetMapping("/dogs/{kind}")
+    public Dog getDogByKind(@PathVariable String kind){
+        return dogManagementService.getDogByKind(kind);
+    }
+    */
+
+
 }
