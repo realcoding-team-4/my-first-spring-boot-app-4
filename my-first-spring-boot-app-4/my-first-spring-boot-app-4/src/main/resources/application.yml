@@ -5,4 +5,4 @@ spring:
     mongodb:
       host: localhost
       port: 27017
-      database: realcoding-4 #4Á¶
+      database: realcoding-4 #4ì¡°
