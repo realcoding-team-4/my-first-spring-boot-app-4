@@ -3,10 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Usersk0s0arealcoding_spring.iml" filepath="$PROJECT_DIR$/.idea/Usersk0s0arealcoding_spring.iml" />
-<<<<<<< HEAD
-=======
       <module fileurl="file://$PROJECT_DIR$/my-first-spring-boot-app-4/my-first-spring-boot-app-4/my-first-spring-boot-app-4.iml" filepath="$PROJECT_DIR$/my-first-spring-boot-app-4/my-first-spring-boot-app-4/my-first-spring-boot-app-4.iml" />
->>>>>>> 84c64417e3f3d75291d74d31f29d94e4da532d37
+      <module fileurl="file://$PROJECT_DIR$/my-first-spring-boot-app-4/my-first-spring-boot-app-4/my-first-spring-boot-project-0.iml" filepath="$PROJECT_DIR$/my-first-spring-boot-app-4/my-first-spring-boot-app-4/my-first-spring-boot-project-0.iml" />
     </modules>
   </component>
 </project>
