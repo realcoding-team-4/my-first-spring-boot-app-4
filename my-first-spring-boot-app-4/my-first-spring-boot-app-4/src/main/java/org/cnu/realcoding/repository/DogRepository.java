@@ -47,7 +47,7 @@ public class DogRepository {
         return mongoTemplate.findAll(Dog.class);
     }
 
-    public Dog findDogByAll(String name, String ownerName, String ownerPhoneNumber) {
+    /*public Dog findDogByAll(String name, String ownerName, String ownerPhoneNumber) {
         return mongoTemplate
                 .findOne(
                         Query.query(Criteria.where("name").is(name)
@@ -55,5 +55,5 @@ public class DogRepository {
                                         .andOperator(Criteria.where("ownerPhoneNumber").is(ownerPhoneNumber)))),
                         Dog.class // T -> generic 여기서는 Dog 객체
                 );
-    }
+    }*/
 }
