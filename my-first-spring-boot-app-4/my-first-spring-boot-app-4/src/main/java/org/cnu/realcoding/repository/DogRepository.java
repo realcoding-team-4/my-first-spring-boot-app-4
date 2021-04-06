@@ -48,7 +48,8 @@ public class DogRepository {
                 );
     }
 
-    /*public Dog changeDogByKind(String kind){
+    /* -- 이재원 구현중
+    public Dog changeDogByKind(String kind){
         return mongoTemplate
                 .update(
                         Query.query(Criteria.where("kind").is(kind)),

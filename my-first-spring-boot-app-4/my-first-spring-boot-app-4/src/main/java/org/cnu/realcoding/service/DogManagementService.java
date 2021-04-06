@@ -64,6 +64,7 @@ public class DogManagementService {
     }
 
     public Dog getDogByKind(String kind){
+        // -- 이재원 구현중
         Dog dog = dogRepository.findDogByKind(kind);
 
         if(dog == null){
