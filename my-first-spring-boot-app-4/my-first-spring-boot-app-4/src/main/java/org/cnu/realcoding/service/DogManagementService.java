@@ -63,7 +63,16 @@ public class DogManagementService {
         return dog;
     }
 
-    /*public Dog getDogByAll(String name, String ownerName, String ownerPhoneNumber) {
+    public Dog getDogByKind(String kind){
+        Dog dog = dogRepository.findDogByKind(kind);
+
+        if(dog == null){
+            throw new DogNotFoundException();
+        }
+        return dog;
+    }
+
+    public Dog getDogByAll(String name, String ownerName, String ownerPhoneNumber) {
         Dog dog = dogRepository.findDogByAll(name, ownerName, ownerPhoneNumber);
 
         if (dog == null){
@@ -71,5 +80,5 @@ public class DogManagementService {
         }
 
         return dog;
-    }*/
+    }
 }
