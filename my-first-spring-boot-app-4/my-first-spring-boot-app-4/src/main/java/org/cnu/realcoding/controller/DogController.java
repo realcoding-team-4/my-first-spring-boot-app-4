@@ -41,8 +41,14 @@ public class DogController {
         return dogManagementService.getDogByOwnerPhoneNumber(ownerPhoneNumber);
     }
 
-    /*@GetMapping("/dogs/{name, ownerName, ownerPhoneNumber}")
+    @GetMapping("/dogs/{kind}")
+    public Dog getDogByKind(@PathVariable String kind){
+        return dogManagementService.getDogByKind(kind);
+    }
+
+
+    @GetMapping("/dogs/{name, ownerName, ownerPhoneNumber}")
     public Dog getDogByAll(@PathVariable String name, String ownerName, String ownerPhoneNumber){
         return dogManagementService.getDogByAll(name,ownerName,ownerPhoneNumber);
-    }*/
+    }
 }
