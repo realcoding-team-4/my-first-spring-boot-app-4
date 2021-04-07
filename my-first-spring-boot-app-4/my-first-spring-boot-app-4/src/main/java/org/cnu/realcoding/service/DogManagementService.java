@@ -15,11 +15,11 @@ public class DogManagementService {
     @Autowired
     private DogRepository dogRepository;
 
-    public void insertDog(Dog dog){
+    public void insertDog(Dog dog) {
         List<Dog> dogList = getAllDogs();
-        for(int i = 0; i < dogList.size(); i++){
+        for (int i = 0; i < dogList.size(); i++) {
             Dog check = dogList.get(i);
-            if(check.getName().equals(dog.getName()) && check.getOwnerName().equals(dog.getOwnerName()) && check.getOwnerPhoneNumber().equals(dog.getOwnerPhoneNumber())){
+            if (check.getName().equals(dog.getName()) && check.getOwnerName().equals(dog.getOwnerName()) && check.getOwnerPhoneNumber().equals(dog.getOwnerPhoneNumber())) {
                 throw new ExistDogException();
             }
         }
@@ -27,11 +27,10 @@ public class DogManagementService {
     }
 
 
+    public List<Dog> getDogByName(String name) {
+        List<Dog> dog = dogRepository.findDogByName(name);
 
-    public Dog getDogByName(String name){
-        Dog dog = dogRepository.findDogByName(name);
-
-        if (dog == null){
+        if (dog == null) {
             throw new DogNotFoundException();
         }
 
@@ -43,40 +42,75 @@ public class DogManagementService {
     }
 
 
-    public Dog getDogByOwnerName(String ownerName) {
-        Dog dog = dogRepository.findDogByOwnerName(ownerName);
+    public List<Dog> getDogByOwnerName(String ownerName) {
+        List<Dog> dog = dogRepository.findDogByOwnerName(ownerName);
 
-        if (dog == null){
+        if (dog == null) {
             throw new DogNotFoundException();
         }
 
         return dog;
     }
 
-    public Dog getDogByOwnerPhoneNumber(String ownerPhoneNumber) {
-        Dog dog = dogRepository.findDogByOwnerPhoneNumber(ownerPhoneNumber);
+    public List<Dog> getDogByOwnerPhoneNumber(String ownerPhoneNumber) {
+        List<Dog> dog = dogRepository.findDogByOwnerPhoneNumber(ownerPhoneNumber);
 
-        if (dog == null){
+        if (dog == null) {
             throw new DogNotFoundException();
         }
 
         return dog;
     }
 
-    public Dog getDogByKind(String kind){
-        // -- 이재원 구현중
-        Dog dog = dogRepository.findDogByKind(kind);
+    //==========================================
+    public Dog updateDogByKind(String name, String ownerName, String ownerPhoneNumber , String newKind) { // 66666
+        Dog dog = getDogByAll(name,ownerName,ownerPhoneNumber);
 
         if(dog == null){
             throw new DogNotFoundException();
         }
+
+        dogRepository.updateDogByKind(name, ownerName , ownerPhoneNumber ,newKind);
         return dog;
     }
 
+    public void medicalRecords(String name, String ownerName, String ownerPhoneNumber, String report) { // 77777
+        Dog dog = getDogByAll(name,ownerName,ownerPhoneNumber);
+
+        if (dog == null) {
+            throw new DogNotFoundException();
+        }
+
+        dogRepository.addMedicalReport(name,ownerName,ownerPhoneNumber,report);
+    }
+
+    public Dog updateDogAll(String name, String ownerName, String ownerPhoneNumber,
+                            String newName, String newKind, String newOwnerName,
+                            String newOwnerPhoneNumber) {
+
+        Dog dog = dogRepository.findDogByAll(name, ownerName, ownerPhoneNumber);
+
+        if(dog == null){
+            throw new DogNotFoundException();
+        }
+
+        Dog existDog = dogRepository.findDogByAll(newName,newOwnerName,newOwnerPhoneNumber);
+
+        if(existDog != null){
+            throw new ExistDogException();
+        }
+
+        dogRepository.updateDogAll(name, ownerName , ownerPhoneNumber ,newName , newKind
+                , newOwnerName, newOwnerPhoneNumber);
+
+        return dog;
+    }
+
+    //=====================================
     public Dog getDogByAll(String name, String ownerName, String ownerPhoneNumber) {
         Dog dog = dogRepository.findDogByAll(name, ownerName, ownerPhoneNumber);
 
-        if (dog == null){
+        if (dog == null) {
             throw new DogNotFoundException();
         }
 
