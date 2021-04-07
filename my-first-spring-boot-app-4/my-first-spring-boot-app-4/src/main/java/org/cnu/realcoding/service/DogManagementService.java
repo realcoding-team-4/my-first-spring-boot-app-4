@@ -30,22 +30,17 @@ public class DogManagementService {
     public List<Dog> getDogByName(String name) {
         List<Dog> dog = dogRepository.findDogByName(name);
 
-        if (dog == null) {
+        if (dog.size() == 0) {
             throw new DogNotFoundException();
         }
 
         return dog;
     }
 
-    public List<Dog> getAllDogs() {
-        return dogRepository.findAllDog();
-    }
-
-
     public List<Dog> getDogByOwnerName(String ownerName) {
         List<Dog> dog = dogRepository.findDogByOwnerName(ownerName);
 
-        if (dog == null) {
+        if (dog.size() == 0) {
             throw new DogNotFoundException();
         }
 
@@ -55,11 +50,16 @@ public class DogManagementService {
     public List<Dog> getDogByOwnerPhoneNumber(String ownerPhoneNumber) {
         List<Dog> dog = dogRepository.findDogByOwnerPhoneNumber(ownerPhoneNumber);
 
-        if (dog == null) {
+        if (dog.size() == 0) {
             throw new DogNotFoundException();
         }
 
         return dog;
+    }
+
+
+    public List<Dog> getAllDogs() {
+        return dogRepository.findAllDog();
     }
 
     //==========================================

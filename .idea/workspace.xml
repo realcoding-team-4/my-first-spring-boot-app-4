@@ -9,6 +9,9 @@
       <change beforePath="$PROJECT_DIR$/my-first-spring-boot-app-4/my-first-spring-boot-app-4/src/main/java/org/cnu/realcoding/controller/DogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-first-spring-boot-app-4/my-first-spring-boot-app-4/src/main/java/org/cnu/realcoding/controller/DogController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-first-spring-boot-app-4/my-first-spring-boot-app-4/src/main/java/org/cnu/realcoding/repository/DogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-first-spring-boot-app-4/my-first-spring-boot-app-4/src/main/java/org/cnu/realcoding/repository/DogRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-first-spring-boot-app-4/my-first-spring-boot-app-4/src/main/java/org/cnu/realcoding/service/DogManagementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-first-spring-boot-app-4/my-first-spring-boot-app-4/src/main/java/org/cnu/realcoding/service/DogManagementService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-first-spring-boot-app-4/my-first-spring-boot-app-4/target/classes/org/cnu/realcoding/controller/DogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-first-spring-boot-app-4/my-first-spring-boot-app-4/target/classes/org/cnu/realcoding/controller/DogController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-first-spring-boot-app-4/my-first-spring-boot-app-4/target/classes/org/cnu/realcoding/repository/DogRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-first-spring-boot-app-4/my-first-spring-boot-app-4/target/classes/org/cnu/realcoding/repository/DogRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-first-spring-boot-app-4/my-first-spring-boot-app-4/target/classes/org/cnu/realcoding/service/DogManagementService.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-first-spring-boot-app-4/my-first-spring-boot-app-4/target/classes/org/cnu/realcoding/service/DogManagementService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +46,17 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyFirstSpringBootApp4Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="my-first-spring-boot-project-0" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.cnu.realcoding.MyFirstSpringBootApp4Application" />
@@ -64,6 +78,7 @@
       <workItem from="1617716966816" duration="150000" />
       <workItem from="1617734485021" duration="833000" />
       <workItem from="1617808421308" duration="42000" />
+      <workItem from="1617810351340" duration="3633000" />
     </task>
     <servers />
   </component>

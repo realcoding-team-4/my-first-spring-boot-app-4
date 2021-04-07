@@ -27,18 +27,18 @@ public class DogController {
     }
 
 
-    @GetMapping("/dogs/{name}")
-    public List<Dog> getDogByName(@PathVariable String name){
+    @GetMapping("/dogs/_{name}") //인자가 하나인 url들의 모호한 mapping 주소 방지를 위해 _ 추가
+    public List<Dog> getDogByName(@PathVariable String name){ // 같은 이름을 가진 강아지들의 정보를 List<Dog> 타입으로 반환
         return dogManagementService.getDogByName(name);
     }
 
-    @GetMapping("/dogs/{ownerName}")
-    public List<Dog> getDogByOwnerName(@PathVariable String ownerName){
+    @GetMapping("/dogs/__{ownerName}") //인자가 하나인 url들의 모호한 mapping 주소 방지를 위해 __ 추가
+    public List<Dog> getDogByOwnerName(@PathVariable String ownerName){// 같은 주인이름을 가진 강아지들의 정보를 List<Dog> 타입으로 반환
         return dogManagementService.getDogByOwnerName(ownerName);
     }
 
-    @GetMapping("/dogs/{ownerPhoneNumber}")
-    public List<Dog> getDogByOwnerPhoneNumber(@PathVariable String ownerPhoneNumber){
+    @GetMapping("/dogs/___{ownerPhoneNumber}")//인자가 하나인 url들의 모호한 mapping 주소 방지를 위해 ___ 추가
+    public List<Dog> getDogByOwnerPhoneNumber(@PathVariable String ownerPhoneNumber){// 같은 주인번호를 가진 강아지들의 정보를 List<Dog> 타입으로 반환
         return dogManagementService.getDogByOwnerPhoneNumber(ownerPhoneNumber);
     }
 
@@ -54,15 +54,17 @@ public class DogController {
         return dogManagementService.updateDogAll(name,ownerName,ownerPhoneNumber,newName,newKind,newOwnerName,newOwnerPhoneNumber);
     }
 
-    @GetMapping("/dogs/{name}/{ownerName}/{ownerPhoneNumber}/{newKind}")
+    @PatchMapping("/dogs/{name}/{ownerName}/{ownerPhoneNumber}/_{newKind}") //인자가 네개인 url들의 모호한 mapping 주소 방지를 위해 _ 추가
     public Dog updateDogByKind(@PathVariable String name, @PathVariable String ownerName, @PathVariable String ownerPhoneNumber, @PathVariable String newKind) { // 66666
         return dogManagementService.updateDogByKind(name,ownerName,ownerPhoneNumber,newKind);
     }
 
-    @PatchMapping("/dogs/{name}/{ownerName}/{ownerPhoneNumber}/{medicalReport}") // 77777
+    @PatchMapping("/dogs/{name}/{ownerName}/{ownerPhoneNumber}/__{medicalReport}") //인자가 네개인 url들의 모호한 mapping 주소 방지를 위해 __ 추가
     public ResponseEntity<?> addMedicalReport(@PathVariable String name, @PathVariable  String ownerName, @PathVariable  String ownerPhoneNumber , @PathVariable String medicalReport){
         dogManagementService.medicalRecords(name,ownerName,ownerPhoneNumber,medicalReport);
         return ResponseEntity.ok("MedicalReport Updated");
     }
 
+
+    // 실전코딩 Spring : my-first-spring-boot-app-4 구현 <동물병원 강아지 관리를 위한 BackEnd 서버 구현>
 }
