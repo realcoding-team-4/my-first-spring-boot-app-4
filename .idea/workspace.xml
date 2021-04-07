@@ -43,17 +43,6 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MyFirstSpringBootApp4Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="my-first-spring-boot-project-0" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.cnu.realcoding.MyFirstSpringBootApp4Application" />
@@ -74,6 +63,7 @@
       <workItem from="1617716770851" duration="156000" />
       <workItem from="1617716966816" duration="150000" />
       <workItem from="1617734485021" duration="833000" />
+      <workItem from="1617808421308" duration="42000" />
     </task>
     <servers />
   </component>
@@ -90,5 +80,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
